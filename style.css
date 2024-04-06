@@ -33,13 +33,17 @@ svg {
 .name {
     font-size: 4rem;
     color: var(--snapColor);
+    line-height:4rem;
 }
 h1 {
-    font-size: 10rem;
+    font-size: 7rem;
+    margin-bottom: 0.5rem;
+    line-height:8rem;
 }
 
 h2 {
     font-size: 4rem;
+    
 }
 
 span {
@@ -145,12 +149,18 @@ span {
     grid-row: 3/5;
     position: relative;
 }
+.grid9-content ul li{
+    font-size: 2rem;
+    font-weight: 300;
 
-.grid9 .notebook {
+}
+
+
+/* .grid9 .notebook {
     position: absolute;
     left: -30%;
     width: 700px;
-}
+} */
 
 .grid10 {
     grid-column: 1/3;
@@ -241,37 +251,51 @@ button{
     justify-content: center;
     font-weight: 500px;
 }
+
+/* Your existing styles */
+
 @media only screen and (max-width: 768px) {
-    /* Adjusting Grid and Wrapper for Mobile */
     .wrapper {
         grid-template-columns: 1fr;
         padding: 2rem;
     }
 
+    .grid {
+        width: 100%;
+    }
+
+    [class^="grid"] {
+        grid-column: auto;
+        grid-row: auto;
+      }
+
     .grid1 .profilepic {
         width: 10rem;
     }
 
-    /* Adjusting Grid Content for Mobile */
+
     .grid2-content {
-        font-size: 1.4rem;
-        padding: 1rem;
+        font-size:1rem;
+        padding:1rem;
     }
 
-    /* Adjusting SVG Sizes for Mobile */
     .grid svg {
         width: 50px;
         height: 50px;
     }
 
-    /* Adjusting Services Layout for Mobile */
     .services {
         flex-direction: column;
-        padding: 1rem;
+        padding:1rem;
+    }
+    .grid9-content ul li{
+        font-size: 1.5rem;
+        font-weight: 300;
+    
     }
 
-    /* Adjusting Heading Sizes for Mobile */
-    h2 {
-        font-size: 2rem;
+    h2 { 
+        font-size: 1.4rem;
     }
 }
+
