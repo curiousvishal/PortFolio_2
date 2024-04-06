@@ -5,9 +5,7 @@
     padding: 0;
 }
 
-html {
-    font-size: 20px;
-}
+
 
 :root {
     --backColor: rgb(49, 49, 49);
@@ -29,23 +27,24 @@ body {
 
 
 svg {
-    margin-right: 15px;
-    height: 150px;
+    margin-right: 5px;
+    height: 100px;
+    width: 100px;
 
 }
 .name {
-    font-size: 4rem;
+    font-size: 3rem;
     color: var(--snapColor);
-    line-height:4rem;
+    /* line-height:2rem; */
 }
 h1 {
-    font-size: 7rem;
-    margin-bottom: 0.5rem;
-    line-height:8rem;
+    /* font-size: 3rem; */
+    /* margin-bottom: 0.5rem; */
+    /* line-height:8rem; */
 }
 
 h2 {
-    font-size: 4rem;
+    font-size: 2rem;
     
 }
 
@@ -87,7 +86,7 @@ background-color: var(--gridHover);
 
 
 .grid1 img {
-    height: 7rem;
+    /* height: 7rem; */
     border-radius: 50%;
 
 }
@@ -122,12 +121,12 @@ background-color: var(--gridHover);
 .grid4 {
     grid-column: 7/10;
     grid-row: 5/8;
-    height: 350px;
+    /* height: 350px; */
 }
 button{
-    height: 200px;
-    width: 400px;
-    font-size: 1.5rem;
+    height: 50px;
+    width: 125px;
+    font-size: 1rem;
 }
 
 
@@ -152,14 +151,15 @@ button{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 3rem;
-    position: relative;
+    /* margin: 1rem; */
+    /* position: relative; */
 }
 
 .grid7-content button{
-    height: 4rem;
-    width: 300px;
-    font-size: 1.5rem;
+    margin: 1rem;
+    height: 50px;
+    width: 125px;
+    font-size: 1rem;
 }
 
 .grid8 {
@@ -174,13 +174,13 @@ button{
     
 }
 .grid9-content ul li{
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 300;
 
 }
 .grid9-content .softskills{
     color: var(--snapColor);
-    font-size: 2rem;
+    font-size: 1rem;
     font-weight: 300;
     font-family: "Poppins", sans-serif; ;
 }
@@ -218,12 +218,11 @@ button{
     grid-row: 2/3;
     display: flex;
     /* position: relative; */
-    display: flex;
     flex-direction: column;
 }
 .grid12 .handles{
     /* position: absolute; */
-    top: 10px;
+    /* top: 10px; */
     color: var(--snapColor);
 }
 
@@ -267,6 +266,11 @@ button{
     gap: 1rem;
     flex-direction: column;
 }
+
+.contact-form button{
+    height: 100px;
+    width: 175px;
+}
 input,textarea{
     width: 100%;
     border: none;
@@ -279,15 +283,16 @@ input,textarea{
 
 }
 button{
-    border-radius: 30px;
-    width: 8rem;
-    height: 3rem;
+    border-radius: 15px;
+    width: 125px;
+    height: 50px;
+    font-size: 20px;
     background-color: var(--backColor);
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-weight: 500px;
+    font-weight: 400px;
 }
 
 /* Your existing styles */
